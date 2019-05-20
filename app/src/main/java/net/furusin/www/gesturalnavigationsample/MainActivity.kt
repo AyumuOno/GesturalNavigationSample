@@ -13,5 +13,14 @@ class MainActivity : AppCompatActivity() {
             View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION or
                     View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
                     View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+        val members = mutableListOf<String>()
+        (0..100).forEach { members.add("furusin $it") }
+
+        findViewById<ListView>(R.id.listView).also { listView ->
+            listView.adapter = ArrayAdapter<String>(
+                this,
+                android.R.layout.simple_expandable_list_item_1, members
+            )
+        }
     }
 }
