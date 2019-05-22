@@ -1,4 +1,0 @@
-#Wed May 22 21:31:06 JST 2019
-base.0=/workspace/Android/GesturalNavigationSample/app/build/intermediates/transforms/dexMerger/debug/9
-path.0=classes.dex
-renamed.0=classes.dex
